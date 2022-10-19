@@ -1,0 +1,12 @@
+'Bucarmanga',0,'Medellin',383,'Tunja',282
+'Medellin',0,'Bucaramanga',383,'Tunja',413,'Bogota',415,'Manizales',229
+'Tunja',0,'Bucaramanga',282,'Medellin',413,'Bogota',139
+'Bogota',0,'Tunja',139,'Medellin',415,'Manizales',293,'Ibague',209,'Neiva',322
+'Manizales',0,'Medellin',229,'Bogota',293,'Pereira',53.3
+'Pereira',0,'Manizales',53.3,'Armenia',49.2
+'Armenia',0,'Pereira',49.2,'Ibague',75.5,'Cali',179
+'Ibague',0,'Armenia',75.5,'Bogota',209,'Neiva',210
+'Cali',0,'Armenia',179,'Popayan',141
+'Neiva',0,'Ibague',210,'Bogota',322,'Popayan',273,'Pasto',467
+'Popayan',0,'Neiva',273,'Cali',141,'Pasto',249
+'Pasto',0,'Popayan',249,'Neiva',467

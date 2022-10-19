@@ -1,5 +1,5 @@
+from operator import mod
 from nodo import *
-from numpy import *
 
 # función que permite encontrar el coste de camino respecto a los caminos ingresados en la cola de prioridad.
 # En cada posición de la cola de prioridad hay un camino desde el vértice inicial al final
@@ -36,17 +36,30 @@ class grafo:
                     nuevoCamino = camino.copy()
                     nuevoCamino.append((element.nombre, element.peso))
                     colaPrioridad.append(nuevoCamino)
-
-                #for (nodoAdyacente, coste) in nodosAdyacentes:
-                 #   nuevoCamino = camino.copy()
-                  #  nuevoCamino.append((nodoAdyacente, coste))
-                   # colaPrioridad.append(nuevoCamino)
     
     def informacionMatriz(self, prmMatriz):
         for elemento in prmMatriz:
             for nodo in elemento:
                 print((nodo.nombre) + ', ' + str((nodo.peso)))
             print()
+
+    def splitCaminos(self,lista,caracter):
+        caminos = []
+        objNodo = nodo(self,self)
+        for element in lista:
+            recorrido = []
+            cad = element.split(caracter)
+            recorrido.append(cad)
+            listaNodos = []
+            for i in range(len(recorrido)):
+                if i % 2 == 0:
+                    n = recorrido[0]
+                    objNodo.nombre = n
+                else:
+                    objNodo.peso = (int)(recorrido[i])
+                listaNodos.append(objNodo)
+            caminos.append(listaNodos)
+        return caminos
 
 def obtenerLista(miMatriz, miNodo):
     for elemento in miMatriz:
